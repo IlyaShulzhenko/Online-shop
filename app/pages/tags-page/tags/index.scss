@@ -1,0 +1,14 @@
+@import 'styles/index';
+
+.tags-page-tags {
+    $border: 1px solid #DDDDDD;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 352px;
+    border-left: $border;
+    border-right: $border;
+    padding: 16px;
+    overflow-y: hidden;
+}

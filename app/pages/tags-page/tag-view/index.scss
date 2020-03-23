@@ -1,0 +1,17 @@
+@import 'styles/index';
+
+.tags-page-tag-view {
+    padding: 16px;
+    //flex: auto;
+
+    &__field {
+        & + & {
+            margin-top: 32px;
+        }
+    }
+
+    .input {
+        width: 330px;
+        margin-top: 4px;
+    }
+}
