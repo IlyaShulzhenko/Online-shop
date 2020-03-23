@@ -1,0 +1,121 @@
+@import 'styles/index';
+
+.home-page-employee-view {
+    $self: &;
+    $colorFavorite: #228B22;
+    $colorBlocked: #FF4500;
+
+    padding: 16px;
+    flex: auto;
+
+    &__employee-info {
+        display: flex;
+
+        &-container {
+            margin-left: 12px;
+        }
+    }
+
+    &__avatar-container {
+        width: 152px;
+        display: inline-block;
+
+        #{$self}__avatar-image-container {
+            width: 104px;
+            height: 104px;
+        }
+
+        #{$self}__avatar-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        };
+
+        #{$self}__avatar-buttons-container {
+            margin-top: 4px;
+
+            .button + .button {
+                margin-left: 4px;
+            }
+        }
+
+        .input-hidden {
+            display: none;
+        }
+    }
+
+    &__employee-info-categories {
+        display: flex;
+        flex: auto;
+        justify-content: flex-end;
+        height: 20px;
+
+        #{$self}__rating {
+            display: inline-flex;
+            justify-content: center;
+            font-size: 16px;
+            line-height: 20px;
+            cursor: pointer;
+            margin-left: 4px;
+
+            svg {
+                width: 20px;
+                height: 20px;
+
+                path {
+                    fill: #FFFFFF;
+                }
+            }
+
+            &--favorite {
+                color: $colorFavorite;
+
+                svg {
+                    margin-right: 4px;
+                    path {
+                        fill: $colorFavorite;
+                    }
+                }
+            }
+
+            &--blocked {
+                color: $colorBlocked;
+
+                svg {
+                    margin-right: 4px;
+                    path {
+                        fill: $colorBlocked;
+                    }
+                }
+            }
+        }
+    }
+
+    &__field {
+        & + & {
+            margin-top: 32px;
+        }
+
+        #{$self}__title {
+            margin-bottom: 4px;
+        }
+    }
+
+    &__employee-container-fields {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        .input {
+            width: 100%;
+        }
+
+        #{$self}__employee-column--small {
+            width: 200px;
+        }
+
+        #{$self}__employee-column--big {
+            width: 330px;
+        }
+    }
+}

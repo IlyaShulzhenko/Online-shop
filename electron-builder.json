@@ -1,0 +1,25 @@
+{
+  "appId": "com.electron.SolHunt",
+  "copyright": "Copyright © 2019 SolbegSoft",
+  "productName": "Solhunt application",
+  "icon": "app.png",
+  "mac": {
+    "category": "public.app-category.business"
+  },
+  "win": {
+    "target": "nsis",
+    "publisherName": "Digidentity"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  },
+  "directories": {
+    "app": "./electron",
+    "output": "../build"
+  },
+  "extends": null
+}

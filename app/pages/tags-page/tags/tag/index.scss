@@ -1,0 +1,42 @@
+@import 'styles/index';
+
+.tags-page-tag {
+    $textColor: #000;
+    $textDescriptionColor: #777777;
+    $backgroundColor: #FFFFFF;
+    $selectedBackgroundColor: #E3F2FD;
+    $border: 1px solid #DDDDDD;
+
+    width: 320px;
+    height: 76px;
+    padding: 12px;
+    border: $border;
+    box-sizing: border-box;
+    background-color: $backgroundColor;
+
+    & + & {
+        margin-top: 8px;
+    }
+
+    &--selected {
+        background-color: $selectedBackgroundColor;
+    }
+
+    &__title {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        color: $textColor;
+        width: 100%;
+    }
+
+    &__description {
+        margin-top: 8px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        width: 100%;
+
+        color: $textDescriptionColor;
+    }
+}
