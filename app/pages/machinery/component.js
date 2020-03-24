@@ -2,14 +2,9 @@ import React from 'react';
 
 import './index.scss';
 
+const baseClassName = 'machinery-page';
 
 class MachineryPage extends React.PureComponent {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-        };
-    }
    
     render() {
        
