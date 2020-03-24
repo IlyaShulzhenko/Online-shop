@@ -27,6 +27,12 @@ class App extends React.PureComponent {
                             component={this.getPageComponent(<TagsPage/>)}/>
                         <Route
                             component={this.getPageComponent(<NotFoundPage/>)}/>
+                        <Route
+                            component={this.getPageComponent(<home/>)}/>
+                        <Route
+                            component={this.getPageComponent(<appliances/>)}/>
+                        <Route
+                            component={this.getPageComponent(<machinery/>)}/>
                     </Switch>
                 </BrowserRouter>
             </div>
