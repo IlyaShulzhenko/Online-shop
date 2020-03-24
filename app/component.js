@@ -32,7 +32,7 @@ class App extends React.PureComponent {
                         <Route
                             component={this.getPageComponent(<appliances/>)}/>
                         <Route
-                            component={this.getPageComponent(<machinery/>)}/>
+                            component={this.getPageComponent(<machinery/>)}/>gi
                     </Switch>
                 </BrowserRouter>
             </div>
