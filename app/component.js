@@ -38,7 +38,6 @@ class App extends React.PureComponent {
             </div>
         );
     }
-
     getPageComponent = (component) => () => {
         return (
             <MasterPage>
@@ -47,5 +46,4 @@ class App extends React.PureComponent {
         );
     };
 }
-
 export default App;
