@@ -1,19 +1,20 @@
 import React from 'react';
 
 import './index.scss';
+import HyperLink from '../../controls/hyper-link/component';
 
 const baseClassName = 'machinery-page';
 
 class MachineryPage extends React.PureComponent {
-   
+    
     render() {
        
         return (            
-                <div>
-                    
-                </div>            
+            <div>
+                <HyperLink/>
+            </div>            
         );
     }
 }
 
-export default MachineryPage
+export default MachineryPage;

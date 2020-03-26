@@ -1,24 +1,20 @@
 import React from 'react';
 
 import './index.scss';
+import HyperLink from '../../controls/hyper-link/component';
 
+const baseClassName = 'appliances-page';
 
-class ComponentPage extends React.PureComponent {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-        };
-    }
-   
+class AppliancesPage extends React.PureComponent {
+ 
     render() {
        
         return (            
-                <div>
-                    
-                </div>            
+            <div>
+                <HyperLink/>
+            </div>            
         );
     }
 }
 
-export default ComponentPage
+export default AppliancesPage;

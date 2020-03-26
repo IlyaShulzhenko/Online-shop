@@ -7,6 +7,10 @@ import MasterPage from 'components/master-page';
 
 import HomePage from 'pages/home';
 
+import AppliancesPage from 'pages/appliances';
+
+import MachineryPage from 'pages/machinery';
+
 import TagsPage from 'pages/tags-page';
 
 import NotFoundPage from 'pages/not-found';
@@ -26,18 +30,23 @@ class App extends React.PureComponent {
                             path={routes.tags}
                             component={this.getPageComponent(<TagsPage/>)}/>
                         <Route
+                            component={this.getPageComponent(<HomePage/>)}/>
+                            Home
+                        <Route
+                            component={this.getPageComponent(<AppliancesPage/>)}/>
+                            Appliances
+                        <Route
+                            component={this.getPageComponent(<MachineryPage/>)}/>
+                            machinery
+                        <Route
                             component={this.getPageComponent(<NotFoundPage/>)}/>
-                        <Route
-                            component={this.getPageComponent(<home/>)}/>
-                        <Route
-                            component={this.getPageComponent(<appliances/>)}/>
-                        <Route
-                            component={this.getPageComponent(<machinery/>)}/>gi
+
                     </Switch>
                 </BrowserRouter>
             </div>
         );
     }
+
     getPageComponent = (component) => () => {
         return (
             <MasterPage>
@@ -46,4 +55,5 @@ class App extends React.PureComponent {
         );
     };
 }
+
 export default App;
