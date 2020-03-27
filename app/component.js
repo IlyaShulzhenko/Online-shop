@@ -15,6 +15,8 @@ import TagsPage from 'pages/tags-page';
 
 import NotFoundPage from 'pages/not-found';
 
+import HyperLink from '../../controls/hyper-link/component';
+
 import './index.scss';
 
 class App extends React.PureComponent {
@@ -34,10 +36,12 @@ class App extends React.PureComponent {
                             Home
                         <Route
                             component={this.getPageComponent(<AppliancesPage/>)}/>
-                            Appliances
+                            <HyperLink to = "Appliances"></HyperLink>
+                            
                         <Route
                             component={this.getPageComponent(<MachineryPage/>)}/>
-                            machinery
+                            <HyperLink to = "machinery"></HyperLink>
+                           
                         <Route
                             component={this.getPageComponent(<NotFoundPage/>)}/>
 
