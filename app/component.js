@@ -16,7 +16,6 @@ import TagsPage from 'pages/tags-page';
 import NotFoundPage from 'pages/not-found';
 
 import HyperLink from '../../controls/hyper-link/component';
-
 import './index.scss';
 
 class App extends React.PureComponent {

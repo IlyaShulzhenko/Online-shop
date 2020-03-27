@@ -9,10 +9,12 @@ import HomePageEmployees from './employees';
 import HomePageEmployeeView from './employee-view';
 
 import './index.scss';
+import HyperLink from '../../controls/hyper-link/component';
 
 const baseClassName = 'home-page';
 
 class HomePage extends React.PureComponent {
+    
     constructor(props) {
         super(props);
 
@@ -32,6 +34,7 @@ class HomePage extends React.PureComponent {
         return {
             component: baseClassName,
             header: `${baseClassName}__header`
+            
         };
     };
 
@@ -45,6 +48,7 @@ class HomePage extends React.PureComponent {
 
         return (
             <div className={classNames.component}>
+                <HyperLink/>
                 <Filter
                     filter={filter}
                     onChange={this.handleFilterChange}
