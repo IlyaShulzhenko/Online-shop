@@ -1,5 +1,17 @@
 @import 'styles/index';
 
 .appliances-page {
+    $border: 1px solid #111111;
 
+    display: flex;
+    height: 100%;
+
+    &__filter {
+        flex: 1;
+        border-right: $border;
+    }
+
+    &__list {
+        flex: 3;
+    }
 }
