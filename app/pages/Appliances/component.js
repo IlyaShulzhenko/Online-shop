@@ -2,23 +2,18 @@ import React from 'react';
 
 import './index.scss';
 
+const baseClassName = 'appliances-page';
 
-class ComponentPage extends React.PureComponent {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-        };
-    }
-   
+class AppliancesPage extends React.PureComponent {
+ 
     render() {
        
         return (            
-                <div>
-                    
-                </div>            
+            <div>
+               appliances
+            </div>            
         );
     }
 }
 
-export default ComponentPage
+export default AppliancesPage;

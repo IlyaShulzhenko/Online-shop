@@ -1,11 +1,15 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import routes from 'common/routes';
 
 import MasterPage from 'components/master-page';
 
 import HomePage from 'pages/home';
+
+import AppliancesPage from 'pages/appliances';
+
+import MachineryPage from 'pages/machinery';
 
 import TagsPage from 'pages/tags-page';
 
@@ -19,25 +23,30 @@ class App extends React.PureComponent {
             <div className='app'>
                 <BrowserRouter>
                     <Switch>
-                        <Route
-                            exact path={routes.home}
+                        {/* <Route
+                            exact path={routes.newHome}
                             component={this.getPageComponent(<HomePage/>)}/>
                         <Route
                             path={routes.tags}
-                            component={this.getPageComponent(<TagsPage/>)}/>
+                            component={this.getPageComponent(<TagsPage/>)}/> */}
+                        <Route
+                            exact path={routes.newHome}
+                            component={this.getPageComponent(<HomePage/>)}/>
+                        <Route
+                            path={routes.appliances}
+                            component={this.getPageComponent(<AppliancesPage/>)}/>                            
+                        <Route
+                            path={routes.machinery}
+                            component={this.getPageComponent(<MachineryPage/>)}/>                           
                         <Route
                             component={this.getPageComponent(<NotFoundPage/>)}/>
-                        <Route
-                            component={this.getPageComponent(<home/>)}/>
-                        <Route
-                            component={this.getPageComponent(<appliances/>)}/>
-                        <Route
-                            component={this.getPageComponent(<machinery/>)}/>gi
+
                     </Switch>
                 </BrowserRouter>
             </div>
         );
     }
+
     getPageComponent = (component) => () => {
         return (
             <MasterPage>
@@ -46,4 +55,5 @@ class App extends React.PureComponent {
         );
     };
 }
+
 export default App;

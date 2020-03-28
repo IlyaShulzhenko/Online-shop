@@ -5,15 +5,15 @@ import './index.scss';
 const baseClassName = 'machinery-page';
 
 class MachineryPage extends React.PureComponent {
-   
+    
     render() {
        
         return (            
-                <div>
-                    
-                </div>            
+            <div>
+                machinery
+            </div>            
         );
     }
 }
 
-export default MachineryPage
+export default MachineryPage;
