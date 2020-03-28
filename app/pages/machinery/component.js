@@ -10,7 +10,7 @@ class MachineryPage extends React.PureComponent {
        
         return (            
             <div>
-                
+                machinery
             </div>            
         );
     }

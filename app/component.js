@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import routes from 'common/routes';
 
@@ -15,7 +15,6 @@ import TagsPage from 'pages/tags-page';
 
 import NotFoundPage from 'pages/not-found';
 
-import HyperLink from '../../controls/hyper-link/component';
 import './index.scss';
 
 class App extends React.PureComponent {
@@ -24,23 +23,21 @@ class App extends React.PureComponent {
             <div className='app'>
                 <BrowserRouter>
                     <Switch>
-                        <Route
-                            exact path={routes.home}
+                        {/* <Route
+                            exact path={routes.newHome}
                             component={this.getPageComponent(<HomePage/>)}/>
                         <Route
                             path={routes.tags}
-                            component={this.getPageComponent(<TagsPage/>)}/>
+                            component={this.getPageComponent(<TagsPage/>)}/> */}
                         <Route
+                            exact path={routes.newHome}
                             component={this.getPageComponent(<HomePage/>)}/>
-                            Home
                         <Route
-                            component={this.getPageComponent(<AppliancesPage/>)}/>
-                            <HyperLink to = "Appliances"></HyperLink>
-                            
+                            path={routes.appliances}
+                            component={this.getPageComponent(<AppliancesPage/>)}/>                            
                         <Route
-                            component={this.getPageComponent(<MachineryPage/>)}/>
-                            <HyperLink to = "machinery"></HyperLink>
-                           
+                            path={routes.machinery}
+                            component={this.getPageComponent(<MachineryPage/>)}/>                           
                         <Route
                             component={this.getPageComponent(<NotFoundPage/>)}/>
 

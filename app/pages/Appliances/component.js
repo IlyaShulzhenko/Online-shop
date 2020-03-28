@@ -2,7 +2,6 @@ import React from 'react';
 
 import './index.scss';
 
-
 const baseClassName = 'appliances-page';
 
 class AppliancesPage extends React.PureComponent {
@@ -11,7 +10,7 @@ class AppliancesPage extends React.PureComponent {
        
         return (            
             <div>
-               
+               appliances
             </div>            
         );
     }
